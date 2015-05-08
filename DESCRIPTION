@@ -1,0 +1,22 @@
+Package: semanticfields
+Title: Analize lexical availability corpora using traditional methods and graphs
+Version: 0.1
+Authors@R: c(person("Claudio Bustos", "Developer", role = c("aut", "cre"),
+    email = "clbustos_at_udec_cl"),
+    person("Marco Valenzuela", "Theoretical adviser", role = c("ctb"),
+    email = "marco_valenzuela_at_udec_cl"),
+    person("Pedro Salcedo", "Thesis supervisor", role = c("ths"),
+    email = "psalcedo_at_udec_cl")
+    )
+Author: Claudio Bustos <clbustos@udec.cl>,
+        Marco Valenzuela <marco.valenzuela@udec.cl>,
+        Pedro Salcedo <psalcedo@udec.cl>
+Maintainer: Claudio Bustos <clbustos@udec.cl>
+Description: Analize lexical availability corpora using traditional methods and graphs
+Depends:
+    R (>= 3.1.1)
+Imports:
+    igraph,
+    reshape
+License: GPL-2
+LazyData: true
