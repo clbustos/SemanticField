@@ -5,8 +5,7 @@
 \title{Transform wide representation (each line a set of responses)
 on a csv file to corpus object representation}
 \usage{
-sfWideCsvToCorpus(filename, center_of_interest = "_ci_",
-  other.vars = data.frame())
+sfWideCsvToCorpus(filename, center_of_interest = "_ci_", other.vars)
 }
 \arguments{
 \item{filename}{CSV filename}
