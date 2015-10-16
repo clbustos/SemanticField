@@ -5,7 +5,7 @@
 \title{Generate a base object to analyze corpus as
 a graph and its lexical availability}
 \usage{
-generateCorpus(x, lambda = 0.9)
+generateCorpus(x)
 }
 \arguments{
 \item{x}{a data.frame with the following structure

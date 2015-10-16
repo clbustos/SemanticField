@@ -15,6 +15,7 @@
 #'        \item \code{answers.per.subject} Number of answer per subject 
 #'        \item \code{mean.answers} Mean number of answers per subject 
 #'        \item \code{sum.answers} Total number of answers for all subjects
+#'        \item \code{cohesion.index} Cohesion Index. Equal to mean.answer/different words
 #'        \item \code{words} List of words
 #'        }
 
@@ -45,9 +46,10 @@ generateCorpus<-function(x) {
     answers.per.subject=n.answer,
     mean.answers=mean(n.answer$n),
     sum.answers=sum(n.answer$n),
+    cohesion.index=mean(n.answer$n)/length(words), 
     words=words,
     words.position=words.position,
-    words.frequency=data.frame(words=words.position[,1],n=rowSums(words.position[,-1]))
+    words.frequency=data.frame(word=words.position[,1],n=rowSums(words.position[,-1]))
   )
   class(out)<-"corpus"
   invisible(out)

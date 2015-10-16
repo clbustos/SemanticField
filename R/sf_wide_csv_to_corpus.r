@@ -12,6 +12,7 @@ sfWideCsvToCorpus<-function(filename,center_of_interest="_ci_",other.vars) {
    is.na(x)<-x==""
    x$id<-seq(1,nrow(x))
    rr<-reshape::melt(x,id.vars="id",measure.vars=cc,na.rm=T,variable_name="order")
+   print(str(rr))
    colnames(rr)<-sub("value","word",colnames(rr))
    rr$order<-as.numeric(gsub("V","",rr$order))
 

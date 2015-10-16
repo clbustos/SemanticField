@@ -4,7 +4,7 @@
 \alias{graphFromCorpus}
 \title{Generate a Graph from igraph, using a data.frame with corpus structure or a corpus object}
 \usage{
-graphFromCorpus(x)
+graphFromCorpus(corpus)
 }
 \arguments{
 \item{x}{a corpus object}
